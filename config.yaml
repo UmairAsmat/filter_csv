@@ -1,0 +1,22 @@
+# Configuration for compare_csvs.py
+# All options are optional and have defaults in the script
+
+# List of columns to use as the unique key for row comparison
+key_columns:
+  - id  # Change to your unique column(s), or remove to use all columns
+
+# Whether to output a CSV file with the differing rows
+output_diff_csv: true
+
+# Path for the output CSV file containing differing rows
+# (rows only in one file or the other)
+diff_csv_path: diff_output.csv
+
+# Path for the detailed text report
+report_path: diff_report.txt
+
+# Whether to treat values as case sensitive
+case_sensitive: true
+
+# Whether to ignore row order (default: true)
+ignore_order: true 
